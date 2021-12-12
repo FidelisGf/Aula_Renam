@@ -2,7 +2,6 @@ package View;
 
 import Controller.PessoaFisicaController;
 import Model.PessoaFisica;
-
 import javax.swing.*;
 
 public class PessoaFisicaView { //basicamente pra vc pedir dados ao usuario, ou mostrar dados para o usuario
@@ -14,7 +13,6 @@ public class PessoaFisicaView { //basicamente pra vc pedir dados ao usuario, ou 
         String endereco = JOptionPane.showInputDialog(null, "Insira o endereço da Pessoa : ");
         PessoaFisica pessoaFisica = new PessoaFisica(nome,endereco,cpf,Idade);
         pessoaFisicaController.inserePessoaFisica(pessoaFisica);
-
     }
     public void listarPessoasFisicas(){
         String output = "";
@@ -24,5 +22,4 @@ public class PessoaFisicaView { //basicamente pra vc pedir dados ao usuario, ou 
         }
         JOptionPane.showMessageDialog(null, output);
     }
-
 }

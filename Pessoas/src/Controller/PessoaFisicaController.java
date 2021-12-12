@@ -14,4 +14,11 @@ public class PessoaFisicaController {
     public List<PessoaFisica> listarPessoasFisicas(){
         return pessoaFisicaDAO.listarPessoasFisicas();
     }
+    public List<PessoaFisica> listarPessoasFisicas(int idPessoaJuridica){
+        return pessoaFisicaDAO.listarPessoasFisicasPorIdPessoaJuridica(idPessoaJuridica);
+    }
+    public PessoaFisica listarPessoa(int idPessoaFisica){
+        return pessoaFisicaDAO.listarPessoa(idPessoaFisica);
+    }
+
 }

@@ -1,10 +1,13 @@
 import DAO.PessoaFisicaDAO;
+import DAO.PessoaJuridicaDAO;
 import View.PessoaFisicaView;
 
 public class Main {
     public static void main(String[] args) {
+        PessoaJuridicaDAO pessoaJuridicaDAO = new PessoaJuridicaDAO();
+        PessoaFisicaDAO pessoaFisicaDAO = new PessoaFisicaDAO();
         PessoaFisicaView pessoaFisicaView = new PessoaFisicaView();
-        pessoaFisicaView.listarPessoasFisicas();
+        pessoaFisicaView.listarPessoa();
     }
 }
 //Herança

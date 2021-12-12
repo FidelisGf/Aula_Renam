@@ -15,13 +15,13 @@ public class PessoaJuridicaDAO {
         this.connection = new ConnectionFactory().getConnection();
         CriarTabelaPessoaJuridca();
     }
-
+    //conceito de chave estrangeira
     private void CriarTabelaPessoaJuridca(){ // query é vc fazer um ação no banco
         // quando vc criar essa tabela o primeiro Id vai ser 1
         // se vc tem o autoincrement , vc nao precisa passar um id para o banco, o banco adicionar 1 ao Id , resultando em 2
         try {
             String sql = "CREATE TABLE IF not exists PessoaJuridica " +
-                    "(IdPessoaJ BIGINT not NULL AUTO_INCREMENT, " +
+                    "(IdPessoaJ INT not NULL AUTO_INCREMENT, " +
                     " PRIMARY KEY (IdPessoaJ) , " +
                     " NomeEmpresa VARCHAR(100), " +
                     " Endereco VARCHAR(100), " +
